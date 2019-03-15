@@ -41,9 +41,13 @@ document.body.appendChild(myTable);
 //ALINEA C
 myTable.innerHTML +=`<tr><td>ISEP</td><td>Porto</td></tr>`
 
+//ALINE D
+let rows = document.querySelectorAll("td");
+for(let each of rows){
+    if(each.innerHTML==="ESMAD")
+    {
+        each.innerHTML = "Vila do Conde/Povoa de Varzim";
+    }
+}
+
 //ALINEA E
-const remove1 = document.getElementsByTagName("tr");
-const remove2 = document.getElementsByTagName("th");
-remove1.removeChild(remove2);
-
-
