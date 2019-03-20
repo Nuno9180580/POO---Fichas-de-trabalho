@@ -51,3 +51,6 @@ for(let each of rows){
 }
 
 //ALINEA E
+const e1 = document.querySelector("table")
+const e2 = document.querySelector("tr:first-of-type");
+e1.removeChild(e2);
