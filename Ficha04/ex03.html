@@ -42,8 +42,8 @@
             console.table(grades);
         }
 
-        calcGradesAverage();
         //c
+        calcGradesAverage();
         function calcGradesAverage() {
             let sum = 0;
             for (const values of grades) {
@@ -51,6 +51,18 @@
             }
 
             console.log(sum / grades.length);
+        }
+
+        //d
+        getPositiveGrades ()
+        function getPositiveGrades () {
+            let studs = "";
+            for (const student of grades) {
+                if(student.grade >= 10) {
+                    studs += student.name + "; ";
+                }
+            }
+            console.log(studs);
         }
     </script>
 </body>
