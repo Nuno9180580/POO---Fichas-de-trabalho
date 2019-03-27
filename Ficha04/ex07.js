@@ -32,13 +32,30 @@ myForm.addEventListener("submit", function(event) {
 
         //adiciona a info do novo filme ao array filmes
         movies.push(newMovie);
-
-        //atualiza a tabela
-        refreshTable();
     }
+
+    //atualiza a tabela
+    refreshTable();
+
     //previne o envio da informacao para o servidor
     event.preventDefault();
 })
+
+//fechar a modal da imagem
+const btnCloseCover = document.querySelector("#btnCloseCover");
+btnCloseCover.addEventListener("click", function() {
+    const dlgCover = document.querySelector("#dlgCover");
+    dlgCover.close();
+})
+
+//fechar a modal do trailer
+const btnCloseTrailer = document.querySelector("#btnCloseTrailer");
+btnCloseTrailer.addEventListener("click", function() {
+    const dlgTrailer = document.querySelector("#dlgTrailer");
+    dlgTrailer.close();
+})
+
+//############################################### FUNÇÕES #########################################################
 
 //funcao para verificar se existe o filme
 function verifie(newTitle) {
@@ -58,7 +75,7 @@ function refreshTable() {
     //Cria o cabeçalho na tabela
     table.innerHTML = `
         <tr>
-            <th>TITULO</th><th>GÉNERO</th>
+            <th>TITULO</th><th>GÉNERO</th><th>OPÇÕES</th>
         </tr>
     `
     //Adiciona o conteudo de cada filme
@@ -75,4 +92,36 @@ function refreshTable() {
         </tr>
         `
     }
+}
+
+//funcao para remover filme
+function removeMovie(title) {
+        for (let i=0; i<movies.length; i++) {
+            if(movies[i].title === title) {
+                movies.splice(i,1);//remove 1posiçao apartir do elemento i do array
+            }
+        }
+        refreshTable();
+}
+
+//funcao para exibir a janela modal da capa
+function showCoverWindow(cover) {
+    //injetar o link da capa na imagem
+    const imgCover = document.querySelector("#imgCover");
+    imgCover.src = cover;
+
+    //exibir a janela
+    const dlgCover = document.querySelector("#dlgCover");
+    dlgCover.showModal();
+}
+
+//funcao para exibir a janela modal do trailer
+function showTrailerWindow(trailer) {
+    //injetar o link do trailer
+    const trailerLink= document.querySelector("#linkTrailer");
+    trailerLink.src = trailer;
+
+    //exibir a janela do trailer
+    const dlgTrailer = document.querySelector("#dlgTrailer");
+    dlgTrailer.showModal();
 }

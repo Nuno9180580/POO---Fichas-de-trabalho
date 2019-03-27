@@ -35,7 +35,7 @@
 
         <!--Trailer-->
         <label for="trailerTxt"> TRAILER:</label>
-        <input id="trailerTxt" type="url" value='https://www.youtube.com/embed/WLKBOJ9jyQg'>
+        <input id="trailerTxt" type="url" value='https://www.youtube.com/watch?v=GXZmlb8WboU&feature=player_embedded_uturn'>
 
         <!--botoes submeter e repor-->
         <input type="submit" value="Submeter">
@@ -47,6 +47,21 @@
     <!--tabela para a informaçao dos filmes-->
     <table>        
     </table>
+
+    <!--janela para exibir a capa do form-->
+    <dialog id="dlgCover">
+        <img id="imgCover" src="" alt="">
+        <br>
+        <button id="btnCloseCover">FECHAR</button>
+    </dialog>
+
+    <!--janela para exibir o trailer do form-->
+    <dialog id="dlgTrailer">
+            <video id="linkTrailer" src="" alt="">
+            <br>
+            <button id="btnCloseTrailer">FECHAR</button>
+        </dialog>
+
     <script src="ex07.js"></script>
 </body>
 </html>
