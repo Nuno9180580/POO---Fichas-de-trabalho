@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex07</title>
+</head>
+<body>
+    <h1>EX07 - JAVASCRIPT</h1>
+    <form>    
+        <!--titulo-->  
+        <label for="titleTxt"> TÍTULO:</label>
+        <input id="titleTxt" type="text" required>
+
+        <!--genero-->
+        <label for="genreSelect"> GÉNERO</label>
+        <select id="genreSelect">
+            <option id="aventura">AVENTURA</option>
+            <option id="acao">AÇÃO</option>
+            <option id="comedia">COMÉDIA</option>
+            <option id="terror">TERROR</option>
+            <option id="romance">ROMANCE</option>
+            <option id="thriller">THRILLER</option>
+            <option id="outro">OUTRO</option>
+        </select>
+
+        <!--ano-->
+        <label for="yearTxt"> ANO:</label>
+        <input id="yearTxt" type="number" min="1900" max="" required>
+
+        <!--capa-->
+        <label for="coverTxt"> CAPA:</label>
+        <input id="coverTxt" type="url" value='https://i.pinimg.com/originals/66/25/b4/6625b41f5b0f64766b161ddfa0fe0db7.jpg' required>
+
+        <!--Trailer-->
+        <label for="trailerTxt"> TRAILER:</label>
+        <input id="trailerTxt" type="url" value='https://www.youtube.com/embed/WLKBOJ9jyQg'>
+
+        <!--botoes submeter e repor-->
+        <input type="submit" value="Submeter">
+        <input type="reset" value="Repor">
+    </form>
+    
+    <hr>
+
+    <!--tabela para a informaçao dos filmes-->
+    <table>        
+    </table>
+    <script src="ex07.js"></script>
+</body>
+</html>
