@@ -1,32 +1,34 @@
-//Alinea A
-const a1 = document.createElement("table");
-const a2 = document.createElement("tr");
-const a3 = document.createElement("th");
-const a4 = document.createElement("th");
-
-const a5 = document.createElement("tr");
-const a6 = document.createElement("td");
-const a7 = document.createElement("td");
-
-const text1 = document.createTextNode("Escola");
-const text2 = document.createTextNode("Local");
-const text3 = document.createTextNode("ESMAD");
-const text4 = document.createTextNode("Vila do Conde");
-a1.appendChild(a2);
-a1.appendChild(a5);
-
-a2.appendChild(a3);
-a2.appendChild(a4);
-
-a3.appendChild(text1);
-a4.appendChild(text2);
-
-a5.appendChild(a6);
-a5.appendChild(a7);
-
-a6.appendChild(text3);
-a7.appendChild(text4);
-document.body.appendChild(a1);
+//criar tabela
+const createTable = document.createElement("table");
+//table row
+const tr1 = document.createElement("tr");
+const tr2 = document.createElement("tr");
+//table header
+const th1 = document.createElement("th");
+const th2 = document.createElement("th");
+//table d...
+const td1 = document.createElement("td");
+const td2 = document.createElement("td");
+//textos
+const txt1 = document.createTextNode("escola")
+const txt2 = document.createTextNode("local")
+const txt3 = document.createTextNode("ESMAD ")
+const txt4 = document.createTextNode("Vila do Conde")
+//texto para o lugar
+th1.appendChild(txt1)
+th2.appendChild(txt2)
+td1.appendChild(txt3)
+td2.appendChild(txt4)
+//preencher table rows
+tr1.appendChild(th1);
+tr1.appendChild(th2);
+tr2.appendChild(td1)
+tr2.appendChild(td2)
+//adicionar table rows a tabela
+createTable.appendChild(tr1);
+createTable.appendChild(tr2);
+//adicionar ao documento
+document.body.appendChild(createTable);
 
 //ALINEA B
 const header1 = "Escola"
