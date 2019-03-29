@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nameTxt">Nome do Jogo </label>
+        <input id="nameTxt" type="text" value="CSGO" required>
+
+        <label for="yearTxt"> Ano </label>
+        <input id="yearTxt" value="1960" type="number" required>
+
+        <label for="genreSelect"> Género</label>
+        <select id="genreSelect">
+            <option id="aventura">AVENTURA</option>
+            <option id="acao">AÇÃO</option>
+            <option id="estrategia">ESTRATÉGIA</option>
+            <option id="desporto">Desporto</option>
+            <option id="simulacao">Simulação</option>
+        </select>
+
+        <!--capa-->
+        <label for="coverTxt"> CAPA:</label>
+        <input id="coverTxt" type="url" value='https://i.pinimg.com/originals/66/25/b4/6625b41f5b0f64766b161ddfa0fe0db7.jpg' required>
+
+        <!--botoes submeter e repor-->
+        <input type="submit" value="Submeter">
+        <input id="resetButton" type="reset" value="Repor">
+    </form>
+
+<!--tabela para a informaçao dos filmes-->
+<table> 
+    <th>Nome</th>
+    <th>Ano</th>      
+    <th>Género</th>
+    <th>Capa</th>
+    <th>Opções</th>
+</table>
+
+    <script src="ex05java.js"></script>
+</body>
+</html>
