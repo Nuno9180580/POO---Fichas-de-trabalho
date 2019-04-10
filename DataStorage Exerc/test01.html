@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="sltSchools">
+        <option id="isep">ISEP</option>
+        <option id="esmad">ESMAD</option>
+        <option id="ese">ESE</option>
+        <option id="feup">FEUP</option>
+    </select>
+    <button>SELECT</button>
+
+    <script>
+        const sltSchools = document.querySelector("#sltSchools");
+        const btnSelect = document.querySelector("button");
+
+        if (localStorage.getItem("school")) {
+            sltSchools.value = "school";
+        }
+
+        btnSelect.addEventListener("click", function () {
+            localStorage.setItem("school", sltSchools.value)
+        })
+    </script>
+</body>
+
+</html>
