@@ -25,7 +25,7 @@ for (const band of bands) {
    if (i%3===0) {
     result += `</div>`
 }
-i++;
+    i++;
 }
 
 myCatalog.innerHTML = result
