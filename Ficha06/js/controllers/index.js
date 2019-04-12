@@ -21,11 +21,11 @@ for (const band of bands) {
             </div>
         </div>
     </div>
-   `  
+   ` 
+   i++;
    if (i%3===0) {
     result += `</div>`
 }
-    i++;
 }
 
 myCatalog.innerHTML = result
