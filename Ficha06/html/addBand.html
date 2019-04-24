@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>myMusic</title>
+    <title>Add Band</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="index.html">myMusic</a>
+        <a class="navbar-brand" href="../index.html">myMusic</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,6 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="html/addBand.html">Add Band</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -33,38 +32,45 @@
     <div class="container-fluid">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-3">myMusic Catalog</h1>
-                <p class="lead">The best band ever!</p>
+                <h1 class="display-3">Add Band</h1>
                 <hr class="my-2">
                 <p>
-                    <form class="form-inline">
+                    <form id="myForm">
                         <div class="form-group">
-                            <label for="sltGenre">Genre:</label>
-                            <select class="form-control m-2" id="sltGenre">
-                                <option value="">All</option>
+                            <label for="nameTxt">Band's Name</label>
+                            <input type="text" class="form-control" id="nameTxt" placeholder="Name ">
+                        </div>
+                        <div class="form-group">
+                            <label for="sltGenre">Genre</label>
+                            <select class="form-control" id="sltGenre">
                                 <option value="Jazz">Jazz</option>
                                 <option value="Metal">Metal</option>
                                 <option value="Pop-rock">Pop-Rock</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="txtName">Band's name</label>
-                            <input type="text" id="txtName" class="form-control m-2" placeholder=""
+                            <label for="infoTxt">Information about the Band</label>
+                            <textarea class="form-control" id="infoTxt" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="imgLink">Image Link</label>
+                            <input type="text" id="imgLink" class="form-control" placeholder=""
                                 aria-describedby="helpId">
                         </div>
-                        <button id="btnFilter" type="button" class="btn btn-primary">Filter</button>
-                        <button id="btnSort" type="button" class="btn btn-primary">Sort</button>
-
+                        <div class="form-group">
+                            <label for="vdLink">Video Link</label>
+                            <input type="text" id="vdLink" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <button type="submit">SUBMIT</button>
+                        <button type="reset">RESET</button>
                     </form>
-                </p>
-                <hr class="my-2">
-                <p id="myCatalog">
                 </p>
             </div>
         </div>
     </div>
     <!-- Optional JavaScript -->
-    <script type="module" src="js/controllers/index.js"></script>
+    <script type="module" src="../js/controllers/addBand.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
