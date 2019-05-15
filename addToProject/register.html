@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Iniciar Sessão</title>
+	<title>Register Page</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -17,14 +17,14 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" type="text/css" href="register.css">
 </head>
 <body>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Iniciar Sessão</h3>
+				<h3>Registo</h3>
 				<div class="d-flex justify-content-end social_icon">
 					<span></span>
 				</div>
@@ -35,32 +35,39 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="Nome de Utilizador">
-						
-					</div>
+						<input type="text" class="form-control" placeholder="Nome de Utilizador">						
+                    </div>
+
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+						</div>
+						<input type="email" class="form-control" placeholder="Endereço de e-mail">
+                    </div>
+                    
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
 						<input type="password" class="form-control" placeholder="Palavra-Passe">
-					</div>
+                    </div>
+
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" placeholder="Confirmar Palavra-Passe">
+                    </div>
+                    
 					<div class="form-group">
-						<input type="submit" value="Iniciar Sessão" class="btn float-right login_btn">
+						<input type="submit" value="Efetuar Registo" class="btn float-right login_btn">
 					</div>
 				</form>
-			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center links">
-					Ainda não tens uma conta?<a href="#">Regista-te</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Não te lembras da palavra-passe?</a>
-				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<script src="login.js"></script>
+<script src="register.js"></script>
 </body>
 </html>

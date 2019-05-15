@@ -15,7 +15,7 @@ align-content: center;
 }
 
 .card{
-height: 350px;
+height: 400px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
@@ -59,7 +59,7 @@ box-shadow: 0 0 0 0 !important;
 .login_btn{
 color: white;
 background-color: rgb(180,180,180);
-width: 140px;
+width: 160px;
 }
 
 .login_btn:hover{
